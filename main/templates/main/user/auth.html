@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row m-3 p-2">
+    <form action="{% url "login" %}" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label id="username" for="disabledTextInput" class="form-label">Username</label>
+            <input type="text" name="username" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+        <div class="mb-3">
+            <label id="password" for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock content %}

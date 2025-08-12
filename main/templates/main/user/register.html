@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="row m-3 p-4">
+    <form action="{% url "register" %}" method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label id="username" for="disabledTextInput" class="form-label">Username</label>
+            <input type="text" name="username" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+
+        <div class="mb-3">
+            <label id="first_name" for="disabledTextInput" class="form-label">First Name</label>
+            <input type="text" name="first_name" id="disabledTextInput" class="form-control"
+                placeholder="Disabled input">
+        </div>
+
+        <div class="mb-3">
+            <label id="last_name" for="disabledTextInput" class="form-label">last_name</label>
+            <input type="text" name="last_name" id="disabledTextInput" class="form-control"
+                placeholder="Disabled input">
+        </div>
+
+        <div class="mb-3">
+            <label id="email" for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label id="password1" for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" name="password1" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label id="password2" for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" name="password2" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Регистрация</button>
+    </form>
+
+</div>
+{% endblock content %}
