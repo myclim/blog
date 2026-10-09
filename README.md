@@ -2,9 +2,13 @@ A simple Django blog with the ability to create posts, user registration, and co
 
 📌 Key Features
 ✅ Create/edit/delete posts
+
 ✅ User registration and authorization
+
 ✅ Search by content
+
 ✅ Pagination and tags
+
 ✅ Responsive design (Bootstrap 5)
 
 ### Installation
