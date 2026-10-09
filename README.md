@@ -1,20 +1,19 @@
-Простой блог на Django с возможностью создания постов, регистрации пользователей и комментариев.
+A simple Django blog with the ability to create posts, user registration, and comments.
 
-## 📌 Основные возможности
+📌 Key Features
+✅ Create/edit/delete posts
+✅ User registration and authorization
+✅ Search by content
+✅ Pagination and tags
+✅ Responsive design (Bootstrap 5)
 
-- ✅ Создание/редактирование/удаление постов
-- ✅ Регистрация и авторизация пользователей
-- ✅ Поиск по содержимому
-- ✅ Пагинация и теги
-- ✅ Адаптивный дизайн (Bootstrap 5)
-
-### Установка
+### Installation
 ```bash
-# Клонирование репозитория
+# Clone the repository
 git clone https://github.com/ваш-username/django-blog.git
 cd django-blog
 
-# Создание виртуального окружения
+# Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
